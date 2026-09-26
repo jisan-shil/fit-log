@@ -25,8 +25,15 @@ body {
   box-sizing: border-box;
 }
  
+h1,
+h2,
+h3 {
+  font-family: var(--font-oswald), sans-serif;
+}
+ 
 /* Native <select> arrows are stripped in SortDropdown via appearance-none;
    this keeps Firefox consistent with that. */
 select {
   color-scheme: dark;
 }
+ 
