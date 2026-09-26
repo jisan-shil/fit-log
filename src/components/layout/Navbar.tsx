@@ -1,8 +1,8 @@
 "use client";
  
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { Dumbbell } from "lucide-react";
 import Badge from "@/components/ui/Badge";
 import { usePlan } from "@/context/PlanContext";
  
@@ -20,7 +20,7 @@ export default function Navbar() {
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-4 sm:px-6 lg:px-8">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 shrink-0">
-          <Dumbbell className="h-5 w-5 text-[#ccff00]" />
+          <Image src="/logo.png" alt="FitLog logo" width={20} height={20} />
           <span className="text-lg font-bold tracking-tight text-white">FITLOG</span>
         </Link>
  
