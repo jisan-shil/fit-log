@@ -1,13 +1,13 @@
 "use client";
- 
+
 import { ChevronDown } from "lucide-react";
 import { SORT_OPTIONS, SortKey } from "@/lib/types";
- 
+
 interface SortDropdownProps {
   value: SortKey;
   onChange: (value: SortKey) => void;
 }
- 
+
 export default function SortDropdown({ value, onChange }: SortDropdownProps) {
   return (
     <div className="flex items-center gap-2 text-sm text-white/60">

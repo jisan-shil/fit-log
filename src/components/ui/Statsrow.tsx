@@ -1,12 +1,12 @@
 import { Clock, Flame, Star } from "lucide-react";
- 
+
 interface StatsRowProps {
   duration: number;
   calories: number;
   rating: number;
   className?: string;
 }
- 
+
 export default function StatsRow({
   duration,
   calories,

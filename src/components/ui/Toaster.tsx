@@ -1,13 +1,13 @@
 "use client";
- 
+
 import { CheckCircle2, X } from "lucide-react";
 import { useToast } from "@/hooks/useToast";
- 
+
 export default function Toaster() {
   const { toasts, dismissToast } = useToast();
- 
+
   if (toasts.length === 0) return null;
- 
+
   return (
     <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-2">
       {toasts.map((toast) => (

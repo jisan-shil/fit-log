@@ -1,10 +1,10 @@
 import { Loader2 } from "lucide-react";
- 
+
 interface LoadingSpinnerProps {
   label?: string;
   className?: string;
 }
- 
+
 export default function LoadingSpinner({
   label = "Loading workouts…",
   className = "",
